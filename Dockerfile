@@ -21,6 +21,8 @@ FROM ubuntu:18.04 as final
 
 WORKDIR /app
 
+RUN apt update && apt install -y git
+
 COPY --from=0 /build/action /app/
 
 CMD ["/app/action"]

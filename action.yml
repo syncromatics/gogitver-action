@@ -2,5 +2,8 @@ name: 'Github release using gogitver'
 description: 'Releases with gogitver version tagging'
 author: 'Syncromatics'
 runs:
-    using: 'docker'
-    image: 'Dockerfile'
+  using: 'docker'
+  image: 'Dockerfile'
+outputs:
+  version:
+    description: "the gogitver version of the repository"
