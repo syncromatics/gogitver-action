@@ -1,4 +1,4 @@
-module gogitver-release-action
+module gogitver-action
 
 go 1.13
 
