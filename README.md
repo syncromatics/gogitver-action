@@ -4,7 +4,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/syncromatics/gogitver-action)](https://goreportcard.com/report/github.com/syncromatics/gogitver-action)
 
 This action wraps [gogitver](https://github.com/syncromatics/gogitver). It will output the version of the repository
-as determined by the git history. This make version information available to other steps, like a docker build and push.
+as determined by the git history. This makes version information available to other steps, like a docker build and push.
 
 Example:
 
