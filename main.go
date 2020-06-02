@@ -38,7 +38,7 @@ func main() {
 		log.Fatal(errors.Wrap(err, "failed cloning git"))
 	}
 
-	version, err := gogitver.GetCurrentVersion(r, gogitver.GetDefaultSettings(), &gogitver.BranchSettings{})
+	version, err := gogitver.GetCurrentVersion(r, gogitver.GetDefaultSettings(), &gogitver.BranchSettings{}, false)
 	if err != nil {
 		log.Fatal(errors.Wrap(err, "failed getting current version"))
 	}
