@@ -11,7 +11,7 @@ COPY . .
 
 RUN go vet ./...
 
-RUN go get -u golang.org/x/lint/golint
+RUN go get golang.org/x/lint/golint
 
 RUN golint -set_exit_status ./...
 
