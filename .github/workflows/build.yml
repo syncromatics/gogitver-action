@@ -15,7 +15,7 @@ jobs:
     needs: test
     if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/hotifx/fix-action'
     steps: 
-      - uses: syncromatics/gogitver-action@42c1dee
+      - uses: syncromatics/gogitver-action@42c1deec823e85cffdc9b309d9aed3306a42264e
         id: gogitver
 
       - name: Create Release
