@@ -1,4 +1,4 @@
-FROM golang:1.17.13 as build
+FROM golang:1.26.3 AS build
 
 WORKDIR /build
 
@@ -11,7 +11,7 @@ COPY . .
 
 RUN go vet ./...
 
-RUN go get golang.org/x/lint/golint@v0.0.0-20190930215403-16217165b5de
+RUN go install golang.org/x/lint/golint@v0.0.0-20190930215403-16217165b5de
 
 RUN golint -set_exit_status ./...
 
